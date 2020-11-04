@@ -15,3 +15,134 @@ anilmk.nie09@gmail.com
 Etios@Home-PC MINGW64 /d/GIT
 $
 
+Etios@Home-PC MINGW64 /d/GIT
+$ git init
+Initialized empty Git repository in D:/GIT/.git/
+
+Etios@Home-PC MINGW64 /d/GIT (master)
+$ ls -lart
+total 28
+drwxr-xr-x 1 Etios 197608 0 Nov  4 13:36 ../
+drwxr-xr-x 1 Etios 197608 0 Nov  4 13:37 git/
+drwxr-xr-x 1 Etios 197608 0 Nov  4 13:42 ./
+drwxr-xr-x 1 Etios 197608 0 Nov  4 13:42 .git/
+
+Etios@Home-PC MINGW64 /d/GIT (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Etios@Home-PC MINGW64 /d/GIT (master)
+
+
+Etios@Home-PC MINGW64 /d/GIT (master)
+$ git commit -a -m "First commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Etios@Home-PC MINGW64 /d/GIT (master)
+$ git add git/
+
+Etios@Home-PC MINGW64 /d/GIT (master)
+$ git commit -a -m "First commit"
+[master (root-commit) 9358a95] First commit
+ 1 file changed, 17 insertions(+)
+ create mode 100644 git/Git Commands.txt
+
+Etios@Home-PC MINGW64 /d/GIT (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Etios@Home-PC MINGW64 /d/GIT (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git/Sample1.txt
+        git/Sample2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Etios@Home-PC MINGW64 /d/GIT (master)
+$ git add -A
+
+Etios@Home-PC MINGW64 /d/GIT (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   git/Sample1.txt
+        new file:   git/Sample2.txt
+
+
+Etios@Home-PC MINGW64 /d/GIT (master)
+$ git commit -a -m "Sample files added"
+[master d4f850e] Sample files added
+ 2 files changed, 2 insertions(+)
+ create mode 100644 git/Sample1.txt
+ create mode 100644 git/Sample2.txt
+
+Etios@Home-PC MINGW64 /d/GIT (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Etios@Home-PC MINGW64 /d/GIT (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   git/Sample1.txt
+        modified:   git/Sample2.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Etios@Home-PC MINGW64 /d/GIT (master)
+$ git checkout -f
+
+Etios@Home-PC MINGW64 /d/GIT (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Etios@Home-PC MINGW64 /d/GIT (master)
+$
+Etios@Home-PC MINGW64 /d/GIT (master)
+$ git log -1
+commit d4f850e42c728266dabb9ea96974c8d6bf44aaa2 (HEAD -> master)
+Author: Anilmk <anilmk.nie09@gmail.com>
+Date:   Wed Nov 4 14:17:53 2020 +0530
+
+    Sample files added
+
+Etios@Home-PC MINGW64 /d/GIT (master)
+$ git log
+commit d4f850e42c728266dabb9ea96974c8d6bf44aaa2 (HEAD -> master)
+Author: Anilmk <anilmk.nie09@gmail.com>
+Date:   Wed Nov 4 14:17:53 2020 +0530
+
+    Sample files added
+
+commit 9358a95d009ffc0fb1fb92d7493c51223480ada5
+Author: Anilmk <anilmk.nie09@gmail.com>
+Date:   Wed Nov 4 13:46:18 2020 +0530
+
+    First commit
+
+Etios@Home-PC MINGW64 /d/GIT (master)
