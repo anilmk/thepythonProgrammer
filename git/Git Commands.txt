@@ -1,0 +1,17 @@
+Etios@Home-PC MINGW64 /d/GIT
+$ git config --global user.name Anilmk
+
+Etios@Home-PC MINGW64 /d/GIT
+$ git config --global user.email anilmk.nie09@gmail.com
+
+Etios@Home-PC MINGW64 /d/GIT
+$ git config --global user.name
+Anilmk
+
+Etios@Home-PC MINGW64 /d/GIT
+$ git config --global user.email
+anilmk.nie09@gmail.com
+
+Etios@Home-PC MINGW64 /d/GIT
+$
+
